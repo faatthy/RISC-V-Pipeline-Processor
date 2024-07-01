@@ -25,7 +25,7 @@ Structural hazards occur when hardware resources are insufficient to support all
 Stalling: Pausing one instruction until the resource becomes available.
 Resource Duplication: Adding additional hardware resources to handle multiple requests simultaneously.
 
-Data hazards happen when instructions depend on the results of previous instructions. There are three types of data hazards:
+2. Data hazards happen when instructions depend on the results of previous instructions. There are three types of data hazards:
 
 - Read After Write (RAW): Occurs when an instruction needs to read a value that has not yet been written by a previous instruction
 - Write After Read (WAR): Occurs when an instruction writes a value to a register that a subsequent instruction reads
