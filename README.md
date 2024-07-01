@@ -15,3 +15,23 @@ A pipeline processor in RISC-V architecture allows for efficient and high-speed 
 - Execute (EX): The operation specified by the instruction is performed.
 - Memory Access (MEM): Access to memory is made if required by the instruction, such as loading from or storing to memory.
 - Write Back (WB): The results of the execution are written back to the register file.
+
+## Pipeline Hazzards 
+Pipeline hazards are conditions that prevent the next instruction in the instruction stream from executing during its designated clock cycle. These hazards can reduce the efficiency of the pipeline, requiring mechanisms to detect and resolve them. There are three primary types of pipeline hazards: structural hazards, data hazards, and control hazards.
+
+1. Structural Hazards
+Structural hazards occur when hardware resources are insufficient to support all the concurrent operations in the pipeline. For example, if two instructions require the use of the same hardware resource at the same time, a structural hazard arises. This can be resolved by:
+
+Stalling: Pausing one instruction until the resource becomes available.
+Resource Duplication: Adding additional hardware resources to handle multiple requests simultaneously.
+
+Data hazards happen when instructions depend on the results of previous instructions. There are three types of data hazards:
+
+- Read After Write (RAW): Occurs when an instruction needs to read a value that has not yet been written by a previous instruction
+- Write After Read (WAR): Occurs when an instruction writes a value to a register that a subsequent instruction reads
+- Write After Write (WAW): Occurs when two instructions write to the same register. The order of writes must be preserved
+
+## Resolving Data Hazards
+- Forwarding (Data Bypassing): Passing the result of a previous instruction directly to the next instruction that needs it, bypassing the need to write to and read from registers.
+- Pipeline Stalling (Interlocks): Introducing stalls (NOPs) to delay the dependent instruction until the required data is available.
+- Compiler Techniques: Reordering instructions to avoid hazards without changing the program semantics.
