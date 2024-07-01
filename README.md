@@ -8,3 +8,10 @@ A pipeline processor in RISC-V architecture allows for efficient and high-speed 
 ## Architecture
 
 ![image](https://github.com/faatthy/RISC-V-Pipeline-Processor/assets/110846097/865941cc-bc1a-4f81-9066-eedf734383a1)
+
+## Fetch Stage 
+![image](https://github.com/faatthy/RISC-V-Pipeline-Processor/assets/110846097/0d8113ce-c987-4d1c-bc19-9ba22165cb80)
+
+## Decode Stage
+![image](https://github.com/faatthy/RISC-V-Pipeline-Processor/assets/110846097/f93a11ac-362f-43ad-8260-7f63dd4a779a)
+
