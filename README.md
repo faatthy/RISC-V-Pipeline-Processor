@@ -35,3 +35,29 @@ Resource Duplication: Adding additional hardware resources to handle multiple re
 - Forwarding (Data Bypassing): Passing the result of a previous instruction directly to the next instruction that needs it, bypassing the need to write to and read from registers.
 - Pipeline Stalling (Interlocks): Introducing stalls (NOPs) to delay the dependent instruction until the required data is available.
 - Compiler Techniques: Reordering instructions to avoid hazards without changing the program semantics.
+
+## Design Hazzard Unit 
+![image](https://github.com/faatthy/RISC-V-Pipeline-Processor/assets/110846097/5d719c06-867c-4500-994f-095eb9185a8e)
+
+## Instruction set 
+The RISC-V ISA is a modern, open, and extensible instruction set designed to be simple and efficient. It provides a modular approach, allowing different extensions to be used for various applications, making it suitable for everything from small embedded systems to powerful supercomputers. Here is an overview of the key components and features of the RISC-V ISA:
+- Arithmetic and Logical Operations:
+
+- ADD rd, rs1, rs2 : Adds two registers.
+- SUB rd, rs1, rs2 : Subtracts one register from another.
+- AND rd, rs1, rs2 : Bitwise AND.
+- OR rd, rs1, rs2 : Bitwise OR.
+- XOR rd, rs1, rs2 : Bitwise XOR.
+- SLL rd, rs1, rs2 : Logical shift left.
+- SRL rd, rs1, rs2 : Logical shift right.
+- SRA rd, rs1, rs2 : Arithmetic shift right.
+- Memory Access:
+
+- LW rd, offset(rs1) : Load word from memory.
+- SW rs2, offset(rs1) : Store word to memory.
+- Control Flow:
+
+- BEQ rs1, rs2, offset : Branch if equal.
+- BNE rs1, rs2, offset : Branch if not equal.
+- JAL rd, offset : Jump and link (used for function calls).
+- JALR rd, offset(rs1) : Jump and link register (used for indirect jumps).
