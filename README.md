@@ -61,3 +61,6 @@ The RISC-V ISA is a modern, open, and extensible instruction set designed to be 
 - BNE rs1, rs2, offset : Branch if not equal.
 - JAL rd, offset : Jump and link (used for function calls).
 - JALR rd, offset(rs1) : Jump and link register (used for indirect jumps).
+
+## Waveform Testbench
+![image](https://github.com/faatthy/RISC-V-Pipeline-Processor/assets/110846097/93045e1d-47de-4b7f-b624-0f210d47a143)
